@@ -1,0 +1,134 @@
+body {
+    padding-top: 56px;
+}
+
+.main {
+    min-height: 100vh;
+}
+
+.dropdown-item:hover {
+    color: #67b5e6;
+}
+#upload {
+    opacity: 0;
+}
+
+#upload-label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+}
+
+.image-area img {
+    z-index: 2;
+    position: relative;
+}
+
+/* https://css.gg/ icons */
+.gg-software-upload {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    /*transform: scale(var(--ggs,1));*/
+    width: 16px;
+    height: 6px;
+    border: 2px solid;
+    border-top: 0;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    margin-top: 12px
+}
+
+.gg-software-upload::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid;
+    border-top: 2px solid;
+    transform: rotate(45deg);
+    left: 2px;
+    bottom: 4px
+}
+
+.gg-software-upload::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+    left: 5px;
+    bottom: 3px
+}
+
+.gg-trash {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 10px;
+    height: 12px;
+    border: 2px solid transparent;
+    box-shadow:
+        0 0 0 2px,
+        inset -2px 0 0,
+        inset 2px 0 0;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    margin-top: 4px
+}
+.gg-trash::after,
+.gg-trash::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute
+}
+.gg-trash::after {
+    background: currentColor;
+    border-radius: 3px;
+    width: 16px;
+    height: 2px;
+    top: -4px;
+    left: -5px
+}
+.gg-trash::before {
+    width: 10px;
+    height: 4px;
+    border: 2px solid;
+    border-bottom: transparent;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    top: -7px;
+    left: -2px
+}
+
+/* End of css.gg icons */
+
+.avatar {
+    border: 1px solid #dee2e6;
+}
+
+.text {
+    position: absolute;
+    width: 50px;
+    opacity: 0;
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .navbar li {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    #data-profile {
+        margin-left: -10em;
+    }
+}
