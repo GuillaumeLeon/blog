@@ -8,6 +8,7 @@ use App\Models\User;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
 {
@@ -45,6 +46,7 @@ class PostController extends Controller
         $request->validate([
             'title' => 'required|string|max:255',
             'content' => 'required|string',
+            'categories' => 'string',
             'image' => 'image|mimes:jpeg,jpg,png,gif|max:10000',
         ]);
 
@@ -87,6 +89,10 @@ class PostController extends Controller
 
         if(!empty($request->file('image'))) {
             $path = $request->file('image')->store('/');
+            Storage::delete($image_exist->image);
+        } elseif(isset($request->delete_img)) {
+            $path = null;
+            Storage::delete($image_exist->image);
         } else {
             $path = $image_exist->image;
         }

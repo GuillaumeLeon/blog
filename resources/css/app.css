@@ -132,3 +132,7 @@ body {
         margin-left: -10em;
     }
 }
+
+#delete-img:hover {
+    cursor: pointer;
+}

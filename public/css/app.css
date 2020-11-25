@@ -132,6 +132,10 @@
         margin-left: -10em;
     }
 }
+
+#delete-img:hover {
+    cursor: pointer;
+}
 @charset "UTF-8";
 
 /*!

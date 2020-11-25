@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class ProfileController extends Controller
 {
@@ -37,14 +38,20 @@ class ProfileController extends Controller
     }
 
     public function avatar_change(Request $request) {
-    if(empty($request->file('avatar'))) {
-        abort(500);
-    }
+        if(empty($request->file('avatar'))) {
+            abort(500);
+        }
+
+        $old_path = User::where('id', Auth::user()->id)->first();
+        $old_path = $old_path->avatar;
+
         $path = $request->file('avatar')->store('/profile');
+
+        Storage::delete('/profile/'.$old_path);
 
         $path = str_replace('profile/', '' , $path);
         User::where('id', Auth::user()->id)->update([
-           'avatar' => $path
+            'avatar' => $path
         ]);
 
         return redirect()->back();

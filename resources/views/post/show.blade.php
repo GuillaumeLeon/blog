@@ -38,12 +38,11 @@
                 </p>
                 <hr>
                 <p>Posted on {{ \Carbon\Carbon::parse($post->created_at)->isoFormat('MMMM D, Y ') }} at {{ \Carbon\Carbon::parse($post->created_at)->isoFormat('HH:mm A') }}</p>
-                <hr>
-
                 @if(!empty($post->image))
+                    <hr>
                     <img class="img-fluid rounded" src="{{ route('image.displayImage',$post->image) }}" alt="">
+                    <hr>
                 @endif
-                <hr>
                 <p class="lead">{!! $post->content !!}</p>
                 <hr>
 
@@ -94,30 +93,30 @@
                         </div>
                     </div>
                 @endforeach
-{{--                <div class="media mb-4">
-                    <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-                    <div class="media-body">
-                        <h5 class="mt-0">Commenter Name</h5>
-                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                {{--                <div class="media mb-4">
+                                    <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+                                    <div class="media-body">
+                                        <h5 class="mt-0">Commenter Name</h5>
+                                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
 
-                        <div class="media mt-4">
-                            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-                            <div class="media-body">
-                                <h5 class="mt-0">Commenter Name</h5>
-                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                            </div>
-                        </div>
+                                        <div class="media mt-4">
+                                            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+                                            <div class="media-body">
+                                                <h5 class="mt-0">Commenter Name</h5>
+                                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                            </div>
+                                        </div>
 
-                        <div class="media mt-4">
-                            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-                            <div class="media-body">
-                                <h5 class="mt-0">Commenter Name</h5>
-                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                            </div>
-                        </div>
+                                        <div class="media mt-4">
+                                            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+                                            <div class="media-body">
+                                                <h5 class="mt-0">Commenter Name</h5>
+                                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                            </div>
+                                        </div>
 
-                    </div>
-                </div>--}}
+                                    </div>
+                                </div>--}}
             </div>
 
             <div class="col-md-4">

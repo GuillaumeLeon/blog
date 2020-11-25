@@ -51,7 +51,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <i class="gg-trash text-muted mt-4 ml-4" onclick="clear()"></i>
+                            <i class="gg-trash text-muted mt-4 ml-4" id="delete-img" data-toggle="tooltip" data-placement="top" title="Remove image"></i>
 
                         </div>
                         <button type="submit" class="btn btn-primary">Modify</button>

@@ -15,6 +15,7 @@ tinymce.init({
 
 let input = document.getElementById( 'upload' );
 let infoArea = document.getElementById( 'upload-label' );
+let delete_image = document.getElementById( 'delete-img' );
 
 if(input !== null) {
     input.addEventListener( 'change', showFileName );
@@ -25,8 +26,19 @@ function showFileName( event ) {
     infoArea.textContent = 'File name: ' + fileName;
 }
 
-window.clear = function() {
+if (infoArea && delete_image) {
+    delete_image.addEventListener('click', clear)
+}
+
+function clear() {
     infoArea.textContent = 'Choose file';
+
+    let input = document.createElement('input');
+    input.type = 'hidden';
+    input.name = 'delete_img';
+    input.value = '1';
+
+    infoArea.parentElement.parentElement.appendChild(input);
 }
 
 let avatar = document.querySelector('.avatar')
