@@ -13,6 +13,8 @@
                         @endif
                         <div class="card-body">
                             <h2 class="card-title">{{ $post->title }}</h2>
+                            <hr>
+                            <p> {{ substr(strip_tags($post->content), 0, 60). ' ... ' }}</p>
                             <a href="/posts/{{ $post->id }}" class="btn btn-primary">Read article &rarr;</a>
                         </div>
                         <div class="card-footer text-muted">
