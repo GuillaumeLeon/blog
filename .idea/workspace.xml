@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="67d730fa-1af1-4135-9279-f5129d740fa0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +15,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="EditorConfigPreviewManager">
+    <editorConfig file="$PROJECT_DIR$/.editorconfig" previewFile="$PROJECT_DIR$/resources/views/home.blade.php" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -147,7 +149,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../node_modules" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -220,7 +222,8 @@
       <workItem from="1606314778352" duration="23000" />
       <workItem from="1606338961449" duration="3387000" />
       <workItem from="1606393930533" duration="34000" />
-      <workItem from="1606497430218" duration="186000" />
+      <workItem from="1606497430218" duration="2206000" />
+      <workItem from="1606505617876" duration="9000" />
     </task>
     <servers />
   </component>
@@ -248,10 +251,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1605315064884" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1604592022367">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1606505625894">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1604592022367" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1606505625894" />
     <state width="1921" height="283" key="GridCell.Tab.0.bottom" timestamp="1604692753033">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -304,10 +307,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="659" y="244" width="602" height="574" key="find.popup/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1606343654949" />
-    <state x="826" y="386" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1606344064872">
+    <state x="826" y="386" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup" timestamp="1606505398624">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="826" y="386" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1606344064872" />
+    <state x="826" y="386" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1606505398624" />
     <state x="601" y="246" width="700" height="530" key="recent.locations.popup" timestamp="1605712142899">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
